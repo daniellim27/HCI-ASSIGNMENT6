@@ -7,29 +7,91 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   <style>
-  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  #draggable, #draggable1,#draggable2, #draggable3, #draggable4, #draggable5 { width: 100px; height: 70px; padding: 0.5em; }
+  
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+table, th, td {
+  border: 1px solid;
+ column-span: 100px;
+}
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+
+}
+
+td{
+  height: 500px;
+  
+}
   </style>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script>
   $( function() {
-    $( "#draggable" ).draggable();
+    $( "#draggable").draggable();
+  } );
+  $( function() {
+    $( "#draggable1" ).draggable();
+  } );
+  $( function() {
+    $( "#draggable2" ).draggable();
+  } );
+  $( function() {
+    $( "#draggable3" ).draggable();
+  } );
+  $( function() {
+    $( "#draggable4" ).draggable();
+  } );
+  $( function() {
+    $( "#draggable5" ).draggable();
   } );
   </script>
 </head>
 <body>
+  <section>
+  <div class="grid-container">
  
 <div id="draggable" class="ui-widget-content">
-  <p>Drag me around</p>
+  <p>Human Computer Interaction</p>
 </div>
-<div id="draggable" class="ui-widget-content">
-    <p>Drag me around</p>
+<div id="draggable1" class="ui-widget-content">
+    <p>Algorithm and Programming</p>
 </div>
-  <div id="draggable" class="ui-widget-content">
-    <p>Drag me around</p>
+  <div id="draggable2" class="ui-widget-content">
+    <p>Program Design Management</p>
   </div>
-  <div id="draggable" class="ui-widget-content">
-    <p>Drag me around</p>
+  <div id="draggable3" class="ui-widget-content">
+    <p>Pancasila</p>
   </div>
+  <div id="draggable4" class="ui-widget-content">
+    <p>Scientific Computing</p>
+    </div>
+  <div id="draggable5" class="ui-widget-content">
+      <p>Discrete maths</p>
+  </div>
+</div>
+</section>
+
+<table>
+  <tr>
+    <th>Today's Assignments</th>
+  </tr>
+  <tr>
+    <td>.</td>
+   
+  </tr>
+  <tr>
+
+  </tr>
+</table>
 </body>
 </html>
